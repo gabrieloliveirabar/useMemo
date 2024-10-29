@@ -11,7 +11,7 @@ O `useMemo` utiliza uma técnica chamada **memoization**, que consiste em armaze
 
 Imagine que você tenha uma função que faz uma operação complexa, como filtrar e mapear uma lista grande de itens. Você quer que essa operação seja executada apenas quando a lista ou certos filtros mudarem:
 
-![Exemplo de código com useMemo](../../assets/useMemo.png)
+![Exemplo de código com useMemo](./src/assets/useMemo.png)
 
 Neste caso, `filteredData` só será recalculado quando `data` mudar. Sem o `useMemo`, a filtragem e o mapeamento seriam feitos em toda renderização, o que pode impactar o desempenho da aplicação.
 
